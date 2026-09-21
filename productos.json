@@ -3,7 +3,7 @@
     "id": 1,
     "nombre": "The Legend of Adventures",
     "precio": 29990,
-    "imagen": "assets/aventura-fantasia.png",
+    "imagen": "assets/img/aventura-fantasia.png",
     "categoria": "videojuegos",
     "descripcion": "Aventura de mundo abierto con historia envolvente. Disponible para consola y PC."
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "nombre": "Speed Racers X",
     "precio": 24990,
-    "imagen": "assets/carreras-neon.png",
+    "imagen": "assets/img/carreras-neon.png",
     "categoria": "videojuegos",
     "descripcion": "Carreras a alta velocidad con 50+ circuitos y multijugador en línea para 8 jugadores."
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "nombre": "Dragon Quest Legends",
     "precio": 34990,
-    "imagen": "assets/aventura-fantasia.png",
+    "imagen": "assets/img/aventura-fantasia.png",
     "categoria": "videojuegos",
     "descripcion": "RPG épico con más de 80 horas de historia y batallas estratégicas por turnos."
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "nombre": "Control DualSense Inalámbrico",
     "precio": 49990,
-    "imagen": "assets/control-inalambrico.png",
+    "imagen": "assets/img/control-inalambrico.png",
     "categoria": "accesorios",
     "descripcion": "Control ergonómico con retroalimentación háptica para todas las consolas del mercado."
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "nombre": "Volante Force GT Racing",
     "precio": 89990,
-    "imagen": "assets/carreras-neon.png",
+    "imagen": "assets/img/carreras-neon.png",
     "categoria": "accesorios",
     "descripcion": "Volante con pedales y retroalimentación de fuerza para máximo realismo en carreras."
   },
