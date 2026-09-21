@@ -1,141 +1,97 @@
-/* Variables globales de color y tipografía */
+/* GameZone - Estilos personalizados
+   Bootstrap maneja el layout; este archivo define la identidad visual. */
+
 :root {
-    --color-fondo: #f4f4f9;
     --color-principal: #1b1f3b;
     --color-acento: #ff6b35;
+    --color-fondo: #f4f4f9;
     --color-texto: #333333;
     --color-texto-claro: #ffffff;
     --fuente-principal: 'Segoe UI', Arial, sans-serif;
 }
 
-/* Modelo de cajas: box-sizing aplicado a todos los elementos */
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: var(--fuente-principal);
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    line-height: 1.6;
 }
 
-/* Encabezado */
+/* NAVBAR */
+.bg-gamezone {
+    background-color: var(--color-principal) !important;
+}
+
+.navbar {
+    border-bottom: 3px solid var(--color-acento);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-acento) !important;
+}
+
+.bg-acento {
+    background-color: var(--color-acento) !important;
+}
+
+/* Transición suave en cards; complementa el hover de JavaScript */
+.card-producto {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Botón de acción principal */
+.btn-gamezone {
+    background-color: var(--color-acento);
+    color: var(--color-texto-claro);
+    border: none;
+}
+
+.btn-gamezone:hover {
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+}
+
+/* HEADER */
 .header {
     background-color: var(--color-principal);
     color: var(--color-texto-claro);
-    text-align: center;
-    padding: 40px 20px;
     border-bottom: 4px solid var(--color-acento);
 }
 
-.header h1 {
-    font-size: 2.5em;
-    margin: 0 0 10px 0;
+/* CARRUSEL */
+.carousel-img {
+    max-height: 450px;
+    object-fit: cover;
+    object-position: center;
 }
 
-/* Menú de navegación */
-.nav {
-    background-color: var(--color-acento);
+/* UTILIDADES DE COLOR */
+.text-acento {
+    color: var(--color-acento);
 }
 
-.nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+.border-acento {
+    border: 2px solid var(--color-acento) !important;
 }
 
-.nav li {
-    margin: 0;
-}
 
-.nav a {
-    display: block;
-    color: var(--color-texto-claro);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 15px 25px;
-}
-
-.nav a:hover {
-    background-color: var(--color-principal);
-}
-
-/* Contenido principal */
-.contenido {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px 20px;
-}
-
+/* Línea naranja bajo los títulos h2 del catálogo */
 #productos-destacados h2 {
     color: var(--color-principal);
     border-bottom: 2px solid var(--color-acento);
     padding-bottom: 8px;
+    display: inline-block;
 }
 
-/* Lista de productos organizada con CSS Grid */
-.lista-productos {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.producto {
-    background-color: var(--color-texto-claro);
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-.producto h3 {
-    color: var(--color-acento);
-    margin: 10px 0 5px 0;
-}
-
-/* Selector avanzado nth-child: alterna el fondo de los productos */
-.producto:nth-child(even) {
-    background-color: #fdf1ea;
-}
-
-/* Lista de categorías */
-.lista-categorias {
-    padding-left: 20px;
-}
-
-.lista-categorias li {
-    margin-bottom: 8px;
-    border-left: 3px solid var(--color-acento);
-    padding-left: 10px;
-}
-
-/* Selector avanzado nth-child en categorías */
-.lista-categorias li:nth-child(odd) {
-    font-weight: bold;
-}
-
-/* Pie de página, seleccionado por ID */
+/* FOOTER */
 #pie-pagina {
     background-color: var(--color-principal);
     color: var(--color-texto-claro);
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 40px;
 }
 
 #pie-pagina a {
@@ -148,57 +104,6 @@ body {
 }
 
 .redes-sociales {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
     padding: 0;
-    margin: 15px 0;
-}
-
-/* ===================== DISEÑO RESPONSIVO ===================== */
-
-/* Tablets: la cuadrícula se adapta a dos columnas */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .lista-productos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-/* Móviles: el menú se apila y la cuadrícula usa una columna */
-@media (max-width: 480px) {
-    .header {
-        padding: 25px 15px;
-    }
-
-    .header h1 {
-        font-size: 1.6em;
-    }
-
-    .nav ul {
-        flex-direction: column;
-    }
-
-    .nav a {
-        text-align: center;
-        padding: 12px 15px;
-    }
-
-    .contenido {
-        padding: 20px 15px;
-    }
-
-    .lista-productos {
-        grid-template-columns: 1fr;
-    }
-
-    .redes-sociales {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
+    margin: 0;
 }

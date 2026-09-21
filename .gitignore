@@ -1,0 +1,11 @@
+# Evidencias y documentación de estudio (no van al repo)
+evidencias/
+*.md
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+*.code-workspace
