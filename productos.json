@@ -3,7 +3,8 @@
     "id": 1,
     "nombre": "The Legend of Adventures",
     "precio": 29990,
-    "imagen": "assets/img/aventura-fantasia.png",
+    "precioOferta": 26990,
+    "imagen": "assets/img/aventura.png",
     "categoria": "videojuegos",
     "descripcion": "Aventura de mundo abierto con historia envolvente. Disponible para consola y PC."
   },
@@ -11,6 +12,7 @@
     "id": 2,
     "nombre": "Speed Racers X",
     "precio": 24990,
+    "precioOferta": 21990,
     "imagen": "assets/img/carreras-neon.png",
     "categoria": "videojuegos",
     "descripcion": "Carreras a alta velocidad con 50+ circuitos y multijugador en línea para 8 jugadores."
@@ -19,32 +21,36 @@
     "id": 3,
     "nombre": "Dragon Quest Legends",
     "precio": 34990,
-    "imagen": "assets/img/aventura-fantasia.png",
+    "precioOferta": 31990,
+    "imagen": "assets/img/dragon.png",
     "categoria": "videojuegos",
     "descripcion": "RPG épico con más de 80 horas de historia y batallas estratégicas por turnos."
   },
   {
     "id": 4,
-    "nombre": "Control DualSense Inalámbrico",
+    "nombre": "Control DualShock 4 Inalámbrico",
     "precio": 49990,
-    "imagen": "assets/img/control-inalambrico.png",
+    "precioOferta": 44990,
+    "imagen": "assets/img/control.jpg",
     "categoria": "accesorios",
-    "descripcion": "Control ergonómico con retroalimentación háptica para todas las consolas del mercado."
+    "descripcion": "Control inalámbrico para PlayStation 4 con panel táctil, vibración y conexión Bluetooth."
   },
   {
     "id": 5,
     "nombre": "Volante Force GT Racing",
     "precio": 89990,
-    "imagen": "assets/img/carreras-neon.png",
+    "precioOferta": 79990,
+    "imagen": "assets/img/volante.png",
     "categoria": "accesorios",
     "descripcion": "Volante con pedales y retroalimentación de fuerza para máximo realismo en carreras."
   },
   {
     "id": 6,
-    "nombre": "Auriculares Gaming Pro RGB",
+    "nombre": "Audífonos Sony Inalámbricos",
     "precio": 35990,
-    "imagen": "assets/control-inalambrico.png",
+    "precioOferta": 32990,
+    "imagen": "assets/img/audifonos.jpg",
     "categoria": "accesorios",
-    "descripcion": "Sonido envolvente 7.1 con micrófono retráctil y luz RGB personalizable."
+    "descripcion": "Audífonos de diadema inalámbricos con almohadillas acolchadas y diseño negro para escuchar música y jugar."
   }
 ]
