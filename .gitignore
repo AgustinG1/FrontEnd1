@@ -1,11 +1,10 @@
-# Evidencias y documentación de estudio (no van al repo)
+node_modules/
+dist/
 evidencias/
-*.md
-
-# Sistema operativo
+entregas/
+*.zip
 .DS_Store
 Thumbs.db
-
-# Editores
 .vscode/
 *.code-workspace
+*.log
